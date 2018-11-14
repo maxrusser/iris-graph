@@ -1,0 +1,19 @@
+---
+title: "iris"
+author: "James Fuller"
+date: "November 14, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+iris_scatter <- ggplot(iris, aes(x=Petal.Length, y=Petal.Width))+
+  geom_point()
+iris_scatter
+```
+
